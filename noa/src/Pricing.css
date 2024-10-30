@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Pricing Page Styling */
+  .pricing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .pricing-page h1 {
+    font-size: 3em;
+    color: #00d8ff;
+  }
+  
+  .pricing-page p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Pyramid Styling */
+  .pyramid-container {
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .pyramid {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  
+  .dot {
+    position: absolute;
+    width: 10px; /* Adjusted for more dots */
+    height: 10px; /* Adjusted for more dots */
+    background-color: #00d8ff;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+  
+  /* Position Dots in 3D Pyramid Formation */
+  .dot:nth-child(1) { transform: translate3d(0, -80px, 0); }
+  .dot:nth-child(2) { transform: translate3d(70px, -40px, 40px); }
+  .dot:nth-child(3) { transform: translate3d(-70px, -40px, 40px); }
+  .dot:nth-child(4) { transform: translate3d(0, -40px, -70px); }
+  .dot:nth-child(5) { transform: translate3d(35px, 20px, 60px); }
+  .dot:nth-child(6) { transform: translate3d(-35px, 20px, 60px); }
+  .dot:nth-child(7) { transform: translate3d(0, 20px, -40px); }
+  .dot:nth-child(8) { transform: translate3d(0, 60px, 0); }
+  .dot:nth-child(9) { transform: translate3d(50px, -80px, 50px); }
+  .dot:nth-child(10) { transform: translate3d(-50px, -80px, 50px); }
+  .dot:nth-child(11) { transform: translate3d(30px, 50px, -30px); }
+  .dot:nth-child(12) { transform: translate3d(-30px, 50px, -30px); }
+  .dot:nth-child(13) { transform: translate3d(20px, -10px, 40px); }
+  .dot:nth-child(14) { transform: translate3d(-20px, -10px, 40px); }
+  .dot:nth-child(15) { transform: translate3d(40px, 0px, -50px); }
+  .dot:nth-child(16) { transform: translate3d(-40px, 0px, -50px); }
+  .dot:nth-child(17) { transform: translate3d(10px, 30px, 30px); }
+  .dot:nth-child(18) { transform: translate3d(-10px, 30px, 30px); }
+  .dot:nth-child(19) { transform: translate3d(0, 20px, 40px); }
+  .dot:nth-child(20) { transform: translate3d(0, 40px, -20px); }
+  
+  /* ASCII Art Styling */
+  .ascii-art {
+    margin-top: 20px;
+    color: #00d8ff; /* ASCII Art Color */
+    font-family: monospace; /* Monospace Font */
+    white-space: pre; /* Maintain whitespace */
+    font-size: 20px; /* Increase size for better visibility */
+  }
+  
